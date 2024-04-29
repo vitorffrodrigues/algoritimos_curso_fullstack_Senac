@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>condicionais</title>
+    </head>
+    <body>
+        <h1>Meu Primeiro Titulo Principal</h1>
+    </body>
+    <script>
+        //parseInt passou o prompt de string para inteiro. //função prompt é caixa para o usuário digitar entrada.
+        var idade = parseInt(prompt("Insira o valor da idade"));
+
+        // dois sinais de == siginifica se for igual. 3 sinais siginifica identico mais o tipo.
+        if(idade === 35){
+            alert("Você tem 35 anos de idade!");
+        } 
+        else if(idade > 35){
+            alert("Você tem mais de 35 anos de idade!");
+        }
+       
+        else {
+            alert("Você não tem 35 anos de idade");
+        }
+        
+               //TIPOS DE DADOS
+
+        //MAIS USADOS/ CLÁSSICOS
+            //STRING - usado para textos ou seja caracteres
+            const nome = "Vitor";
+            //NUMBER ->INT / FLOAT - usando para numeros inteiros e float para numeros decimais.
+            const minhaidade = 34;
+            //BOOLEAN - verdadeiro ou false -> true ou false sempre usar o "IS" antes
+            const isAdmin = false;
+            const isSunday = true;
+            //BIGINT - inteiro para numeros muito grandes.
+            //ARRAY - Armazena varios dados. segue um exemplo de array.
+            const nomes = ["Leo", "Chris", "Bruno"];
+            
+                alert(nomes[0]); //vai gerar alerta do nome com indice 0.
+
+            const idades = [35, 70, 15];
+
+            nomes[0]//Leo
+            nomes[1]//chris
+            nomes[2]//Bruno
+            
+          
+
+        // UM POUCO MAIS COMPLEXOS/ DIFERENTES
+
+            //OBJECT - o mais usado, precisa abrir a chave para indetificar {} EXEMPLO: finalizar com virgulas.
+
+            const serHumano = {
+                nome: "Leo",
+                idade: 34,
+                Peso: 82,
+
+                // vai trazer a informação do objeto nome.
+            }
+
+            alert(serHumano.idade);
+
+
+            //UNDEFINED - liguagem de baixo nivel nao usa, indefinido
+
+        // NUNCA USAMOS/MUITO RARO
+            //SYMBOL - Usado para simbolos
+
+    </script>
+</html>
